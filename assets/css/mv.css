@@ -1,37 +1,8 @@
 :root {
     /*  Anchura mÃ¡xima del contenido en desktop */
     --max-width: 1200px;
+    --block-spacing     : 2rem;
 
-    /*  TamaÃ±os  */
-    --header-height: 3rem;
-    --section-spacing: 4rem;
-    --block-spacing: 2rem;
-    --body-line-height: 1.6;
-    --title-line-height: 1.3;
-
-    /* TamaÃ±os de fuentes */
-    --h1-font-size: 2rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --h4-font-size: 1rem;
-    --big-font-size: 1rem;
-    --normal-font-size: 0.875rem;
-    --small-font-size: 0.75rem;
-    --smaller-font-size: 0.6875rem;
-
-    /* Capas */
-    --z-back: -10;
-    --z-normal: 1;
-    --z-front: 10;
-    --z-tooltip: 20;
-    --z-overlay: 30;
-    --z-modal: 40;
-    --z-fixed: 50;
-    --z-off-canvas: 100;
-
-    /* Otros */
-    --border-radius: 0.5rem;
-    --box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
 }
 
 .content-wrapper {
@@ -54,12 +25,11 @@
     display: flex;
     align-items: center;
     display: grid;
-    gap: 2rem;
+    gap: 20rem;
     justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
-
     .services-section .content-wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -68,14 +38,13 @@
 
 .content-wrapper {
     position: relative;
-    z-index: var(--z-front);
+    z-index: 10;
     display: grid;
     gap: 2rem;
     margin-bottom: var(--block-spacing);
 }
 
 @media screen and (min-width: 1024px) {
-
     .last-projects .content-wrapper {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -88,7 +57,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
     .projects-section .content-wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -98,7 +66,7 @@
 .about-us .content-wrapper {
     display: grid;
     gap: var(--block-spacing);
-    --max-width: 800px;
+    --max-width: 1100px;
 }
 
 .about-item {
@@ -112,7 +80,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
     .about-item:nth-child(odd)>div:nth-of-type(2) {
         order: 2;
     }
@@ -120,7 +87,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
     .about-item {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
@@ -130,7 +96,7 @@
 }
 
 .about-item img {
-    border-radius: var(--border-radius);
+    border-radius: 0.5rem;
 }
 
 .image-container {
@@ -157,7 +123,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
     .contact-section .content-wrapper {
         --max-width: 800px;
         grid-template-columns: 1fr 1fr;
@@ -170,4 +135,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.img-fluid {
+    border-radius: 10%;
 }
