@@ -1,164 +1,173 @@
+:root {
+    /*  Anchura mÃ¡xima del contenido en desktop */
+    --max-width: 1200px;
+
+    /*  TamaÃ±os  */
+    --header-height: 3rem;
+    --section-spacing: 4rem;
+    --block-spacing: 2rem;
+    --body-line-height: 1.6;
+    --title-line-height: 1.3;
+
+    /* TamaÃ±os de fuentes */
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1rem;
+    --big-font-size: 1rem;
+    --normal-font-size: 0.875rem;
+    --small-font-size: 0.75rem;
+    --smaller-font-size: 0.6875rem;
+
+    /* Capas */
+    --z-back: -10;
+    --z-normal: 1;
+    --z-front: 10;
+    --z-tooltip: 20;
+    --z-overlay: 30;
+    --z-modal: 40;
+    --z-fixed: 50;
+    --z-off-canvas: 100;
+
+    /* Otros */
+    --border-radius: 0.5rem;
+    --box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
+}
+
 .content-wrapper {
-    width        : calc(100% - 2rem);
-    max-width    : var(--max-width);
-    margin-left  : 1rem;
-    margin-right : 1rem;
-  }
-  
-  @media screen and (min-width: 1024px) {
-  
+    width: calc(100% - 2rem);
+    max-width: var(--max-width);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
     .content-wrapper {
-      width        : 100%;
-      margin-left  : auto;
-      margin-right : auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
-  
-  }
-.main-header .content-wrapper {
-    display     : flex;
-    align-items : center;
-  }
-.services-section .content-wrapper {
-    display         : grid;
-    gap             : 2rem;
-    justify-content : center;
-  }
-  
-  @media screen and (min-width: 1024px) {
-  
-    .services-section .content-wrapper {
-      grid-template-columns : repeat(3, 1fr);
-    }
-  
-  }
-  .about-section .content-wrapper {
-    position : relative;
-    z-index  : var(--z-front);
-  }
 
-.last-projects .content-wrapper {
-    display       : grid;
-    gap           : 2rem;
-    margin-bottom : var(--block-spacing);
-  }
-  
-  @media screen and (min-width: 1024px) {
-  
-    .last-projects .content-wrapper {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  
-  }
+}
 
-.projects-section .content-wrapper {
-    display : grid;
-    gap     : 2rem;
-  }
-  
-  @media screen and (min-width: 1024px) {
-  
-    .projects-section .content-wrapper {
-      grid-template-columns : repeat(3, 1fr);
-    }
-  
-  }
-.about-us .content-wrapper {
-    display     : grid;
-    gap         : var(--block-spacing);
-    --max-width : 800px;
-  }
-  
-  .about-item {
-    display    : grid;
-    gap        : 1.5rem;
-    text-align : center;
-  }
-  
-  .about-item > div:first-of-type {
-    order : 2;
-  }
-  
-  @media screen and (min-width: 1024px) {
-  
-    .about-item:nth-child(odd) > div:nth-of-type(2) {
-      order : 2;
-    }
-  
-  }
-  
-  @media screen and (min-width: 1024px) {
-  
-    .about-item {
-      grid-template-columns : 1fr 1fr;
-      gap                   : 2rem;
-      text-align            : left;
-    }
-  
-  }
-  
-  .about-item h2 {
-    margin-bottom : 0.5rem;
-  }
-  
-  .about-item p {
-    margin-bottom : 0;
-  }
-  
-  @media screen and (min-width: 1024px) {
-  
-    .about-item h2 {
-      text-align : left;
-    }
-  
-  }
-  
-  .about-item img {
-    border-radius : var(--border-radius);
-  }
-
-  .image-container {
-    width          : 100%;
-    height         : 0;
-    overflow       : hidden;
-    position       : relative;
-    padding-bottom : 56.25%;
-  }
-  
-  .image-container img {
-    position   : absolute;
-    top        : 0;
-    left       : 0;
-    width      : 100%;
-    height     : 100%;
-    object-fit : cover;
-  }
-
-  .section-container {
-    margin-bottom : var(--section-spacing);
-  }
-  
-  .section-container h1,
-  .section-container h2 {
-    text-align : center;
-  }
-
-  .contact-section .content-wrapper {
-    display    : grid;
-    gap        : var(--block-spacing);
-    text-align : center;
-  }
-  
-  @media screen and (min-width: 1024px) {
-  
-    .contact-section .content-wrapper {
-      --max-width           : 800px;
-      grid-template-columns : 1fr 1fr;
-      text-align            : left;
-    }
-  
-  }
-  .image {
+.content-wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .services-section .content-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: var(--z-front);
+    display: grid;
+    gap: 2rem;
+    margin-bottom: var(--block-spacing);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .last-projects .content-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+.content-wrapper {
+    display: grid;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .projects-section .content-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+.about-us .content-wrapper {
+    display: grid;
+    gap: var(--block-spacing);
+    --max-width: 800px;
+}
+
+.about-item {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.about-item>div:first-of-type {
+    order: 2;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .about-item:nth-child(odd)>div:nth-of-type(2) {
+        order: 2;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .about-item {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        text-align: left;
+    }
+
+}
+
+.about-item img {
+    border-radius: var(--border-radius);
+}
+
+.image-container {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-section .content-wrapper {
+    display: grid;
+    gap: var(--block-spacing);
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contact-section .content-wrapper {
+        --max-width: 800px;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
