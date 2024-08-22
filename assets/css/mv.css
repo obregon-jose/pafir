@@ -1,7 +1,7 @@
 :root {
     /*  Anchura mÃ¡xima del contenido en desktop */
     --max-width: 1200px;
-    --block-spacing     : 2rem;
+    --block-spacing: 2rem;
 
 }
 
@@ -136,6 +136,26 @@
     align-items: center;
     justify-content: center;
 }
+
 .img-fluid {
     border-radius: 10%;
+}
+
+.subtitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+    /* padding-bottom: 60px; */
+    position: relative;
+}
+
+.text-center h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
 }

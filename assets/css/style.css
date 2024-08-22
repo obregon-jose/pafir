@@ -808,13 +808,13 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# home Section
 --------------------------------------------------------------*/
-.hero {
+.home {
   padding: 0;
 }
 
-.hero .carousel {
+.home .carousel {
   width: 100%;
   min-height: 70vh;
   padding: 0;
@@ -823,7 +823,7 @@ section,
   position: relative;
 }
 
-.hero img {
+.home img {
   position: absolute;
   inset: 0;
   display: block;
@@ -833,7 +833,7 @@ section,
   z-index: 1;
 }
 
-.hero .carousel-item {
+.home .carousel-item {
   position: absolute;
   inset: 0;
   background-size: cover;
@@ -842,7 +842,7 @@ section,
   overflow: hidden;
 }
 
-.hero .carousel-item:before {
+.home .carousel-item:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
@@ -850,7 +850,7 @@ section,
   z-index: 2;
 }
 
-.hero .carousel-container {
+.home .carousel-container {
   position: absolute;
   inset: 90px 64px 64px 64px;
   display: flex;
@@ -860,7 +860,7 @@ section,
   z-index: 3;
 }
 
-.hero h2 {
+.home h2 {
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
@@ -868,24 +868,24 @@ section,
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .home h2 {
     font-size: 30px;
   }
 }
 
-.hero p {
+.home p {
   animation: fadeInDown 1s both 0.2s;
 }
 
 @media (min-width: 1024px) {
 
-  .hero h2,
-  .hero p {
+  .home h2,
+  .home p {
     max-width: 60%;
   }
 }
 
-.hero .btn-get-started {
+.home .btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
@@ -900,47 +900,47 @@ section,
   animation: fadeInUp 1s both 0.4s;
 }
 
-.hero .btn-get-started:hover {
+.home .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
-
-.hero .carousel-control-prev,
-.hero .carousel-control-next {
+/*  */
+.home .carousel-control-prev,
+.home .carousel-control-next {
   width: 10%;
   transition: 0.3s;
   opacity: 0.5;
 }
 
-.hero .carousel-control-prev:focus,
-.hero .carousel-control-next:focus {
+.home .carousel-control-prev:focus,
+.home .carousel-control-next:focus {
   opacity: 0.5;
 }
 
-.hero .carousel-control-prev:hover,
-.hero .carousel-control-next:hover {
+.home .carousel-control-prev:hover,
+.home .carousel-control-next:hover {
   opacity: 0.9;
 }
 
 @media (min-width: 1024px) {
 
-  .hero .carousel-control-prev,
-  .hero .carousel-control-next {
+  .home .carousel-control-prev,
+  .home .carousel-control-next {
     width: 5%;
   }
 }
 
-.hero .carousel-control-next-icon,
-.hero .carousel-control-prev-icon {
+.home .carousel-control-next-icon,
+.home .carousel-control-prev-icon {
   background: none;
   font-size: 32px;
   line-height: 1;
 }
 
-.hero .carousel-indicators {
+.home .carousel-indicators {
   list-style: none;
 }
 
-.hero .carousel-indicators li {
+.home .carousel-indicators li {
   cursor: pointer;
 }
 
@@ -1205,7 +1205,7 @@ section,
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  padding: 120px 0;
+  /* padding: 120px 0; */
   position: relative;
   clip-path: inset(0);
 }
