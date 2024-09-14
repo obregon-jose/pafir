@@ -162,15 +162,7 @@
 
 
 /* ------------------------- */
-body-sv {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+
 .container-sv {
     display: flex;
     flex-wrap: wrap;
@@ -219,7 +211,15 @@ li-sv {
 
 @media screen and (max-width: 768px) {
     .carousel-item img {
-        max-width: 100%;
+        max-width: 90%;
+        padding-top: 25%; /* Ajusta el ancho máximo de la imagen para dispositivos móviles */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .carousel-item img {
+        max-width: 80%; 
+        padding-top: 15%;/* Ajusta el ancho máximo de la imagen para tabletas */
     }
 }
 
