@@ -845,7 +845,7 @@ section,
 .home .carousel-item:before {
   content: "";
   /* COLOR DE FONDO BANER */
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
   position: absolute;
   inset: 0;
   z-index: 2;

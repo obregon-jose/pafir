@@ -205,3 +205,35 @@ li-sv {
     color: #555;
 }
 
+
+
+
+.carousel-item img {
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 40%; /* Ajusta el ancho máximo de la imagen (puedes cambiar el porcentaje) */
+    height: auto; /* Mantiene la proporción de la imagen */
+    position: relative; /* Posiciona la imagen de forma relativa */
+    /*z-index: 2;  Asegura que esté por encima de otros elementos */
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-item img {
+        max-width: 100%;
+    }
+}
+
+
+
+.carousel-item- {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+}
+
+.carousel-container {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    z-index: 2; /* Asegura que esté por encima de otros elementos */
+}
