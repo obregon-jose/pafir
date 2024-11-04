@@ -237,3 +237,73 @@ li-sv {
     text-align: center; /* Centra el texto dentro del contenedor */
     z-index: 2; /* Asegura que esté por encima de otros elementos */
 }
+
+
+
+/* ----------------- */
+
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+
+/* Estilos para las tarjetas de servicios */
+.container-sv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre las tarjetas */
+}
+
+/* Estilo de cada tarjeta */
+.card-sv {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+    transition: transform 0.2s; /* Transición suave al hacer hover */
+    position: relative; /* Posicionamiento relativo para el icono */
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.card-sv:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el mouse */
+}
+
+/* Títulos de las tarjetas */
+.card-sv h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #5cb874; /* Color del título */
+}
+
+/* Lista dentro de las tarjetas */
+.card-sv ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Quita el padding */
+    display: none; /* Oculta la lista por defecto */
+}
+
+/* Mostrar la lista cuando la tarjeta está activa */
+.card-sv.active ul {
+    display: block; /* Muestra la lista al hacer clic en la tarjeta */
+}
+
+/* Icono de apertura/cierre */
+.card-sv .toggle-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px; /* Tamaño del icono */
+    transition: transform 0.2s; /* Transición para el icono */
+}
+    .container-sv {
+        flex-direction: column; /* Asegura que las tarjetas se apilen verticalmente */
+    }
+
+    .card-sv {
+        width: 100%; /* Las tarjetas ocupan todo el ancho de la pantalla */
+    }
+}
+

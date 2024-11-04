@@ -207,3 +207,12 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+document.querySelectorAll('.card-sv').forEach(card => {
+  card.addEventListener('click', () => {
+      card.classList.toggle('active'); // Alterna la clase active
+      const icon = card.querySelector('.toggle-icon');
+      icon.textContent = card.classList.contains('active') ? '▲' : '▼'; // Cambia el icono
+  });
+});
+
