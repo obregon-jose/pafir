@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fundacionpafir.netlify.app/sitemap.xml
+
+Sitemap: https://obregon-jose.github.io/pafir/sitemap.xml
