@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 
-Sitemap: https://obregon-jose.github.io/pafir/sitemap.xml
+Sitemap: https://pafir.vercel.app/sitemap.xml

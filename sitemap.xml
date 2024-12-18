@@ -7,7 +7,7 @@
     Sitemap: https://fundacionpafir.netlify.app/sitemap.xml
   </url> -->
   <url>
-    <loc>https://obregon-jose.github.io/pafir/</loc>
+    <loc>https://pafir.vercel.app/</loc>
     <lastmod>2024-09-01</lastmod>
     <priority>1.0</priority>
   </url>
