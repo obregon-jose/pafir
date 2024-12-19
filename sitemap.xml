@@ -1,13 +1,22 @@
-<?xml version="1.1" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pafir.vercel.app/</loc>
-    <lastmod>2024-11-01</lastmod>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    </url>
-    <sitemap>
-      <loc>https://pafir.vercel.app/sitemap.xml</loc>
-    </sitemap>
   </url>
-  <!-- Agrega más URL de tus páginas principales aquí -->
+  <!-- Agrega más URLs de tu sitio siguiendo esta estructura -->
+  <!-- <url>
+    <loc>https://pafir.vercel.app/about</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pafir.vercel.app/contact</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
 </urlset>
