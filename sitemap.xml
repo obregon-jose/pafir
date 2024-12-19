@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- <url>
     <loc>https://fundacionpafir.netlify.app/</loc>
@@ -9,7 +9,7 @@
   <url>
     <loc>https://pafir.vercel.app/</loc>
     <lastmod>2024-09-01</lastmod>
-    <priority>1.0</priority>
+    <priority>1.1</priority>
   </url>
   <!-- Agrega más URL de tus páginas principales aquí -->
 </urlset>
